@@ -94,7 +94,7 @@
 
 <script>
     let initilize =(getElementsbyNumber,getElementsbyEmail,getElementsbyID)=>{
-       console.log(user,getElementsbyEmail(),getElementsbyID());
+       console.log(getElementsbyNumber(),getElementsbyEmail(),getElementsbyID());
     }
     let getElementsbyEmail=()=>{
         return "rajsaurav0987@gmail.com";
@@ -102,8 +102,10 @@
     let getElementsbyID=()=>{
         return "Bipul kumar";
     }
-    let getElementsbyNumber=()
-    initilize("Hello",getElementsbyEmail,getElementsbyID);
+    let getElementsbyNumber=()=>{
+        return "9135298711";
+    }
+    initilize(getElementsbyNumber,getElementsbyEmail,getElementsbyID);
 </script>
 </head>
 <body>
