@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--
+<script>
+       function fun_one(){
+        this.sub_1 = "Angular13";
+        this.sub_2 = "NodeJS";
+        this.sub_3 = "HTML";
+       }
+       let obj_1 = new fun_one();
+       console.log(obj_1.sub_1,obj_1.sub_2,obj_1.sub_3);
+       let obj_2 = new fun_one();
+        console.log(obj_2.sub_1,obj_2.sub_2,obj_2.sub_3);
+    </script>
+
+
+<script>
+    function class_one(){
+        this.wish = "JavaScript";
+        this.my_fun = function(){
+            return `Welcome to ${this.wish}`;
+        };
+    };
+     let obj_1 = new class_one();
+     console.log(obj_1.my_fun());
+</script>
+
+ <script>
+    function class_one(){
+        this.sub_1 ="Hello_1";
+        this.sub_2 ="Hello_2";
+        this.sub_3 ="Hello_3";
+        this.fun_one = function(){
+            return this.sub_1;
+        };
+        this.fun_two = function(){
+            return this.sub_2;
+        };
+        this.fun_three = function(){
+            return this.sub_3;
+        };
+    };
+    let obj_1 = new class_one();
+    console.log(obj_1.fun_one(),obj_1.fun_two(),obj_1.fun_three());
+ </script>
+
+ <script>
+    function class_one(arg1,arg2,arg3){
+        this.var_one = arg1;
+        this.var_two = arg2;
+        this.var_three = arg3;
+    }
+    let obj_1 = new class_one("Hello_1","Hello_2","hello_3");
+    console.log(obj_1.var_one,obj_1.var_two,obj_1.var_three);
+
+    let obj_2 = new class_one("My name"," is", "Bipul kumar");
+    console.log(obj_2.var_one,obj_2.var_two,obj_2.var_three);
+ </script>
+
+  <script>
+     function class_one(){
+
+     }
+     class_one.prototype.var_one ="Hello_1";
+     let obj_1 = new class_one();
+     console.log(obj_1.var_one);
+  </script>
+
+
+ <script>
+    function class_one(){
+
+    };
+    class_one.prototype.sub ="Javascript";
+    class_one.prototype.fun_one = function(){
+        return "hello_1";
+    };
+    let obj_1 = new class_one();
+    console.log(obj_1.sub,obj_1.fun_one());
+ </script>
+
+
+ <script>
+    function class_one(){
+
+    }
+    class_one.prototype.var_1 = "Hello_1";
+    function class_two(){
+
+    }
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.var_2 = "Hello_2";
+    let obj_1 = new class_two();
+    console.log(obj_1.var_1,obj_1.var_2);
+ </script>
+
+ <script>
+    function class_one(){
+
+    }
+    class_one.prototype.fun_one = function()
+    {
+        return "Hello_1";
+    }
+    function class_two(){}
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.fun_two = function class_two()
+    {
+        return "Hello_2";
+    }
+    function class_three(){}
+    class_three.prototype = Object.create(class_two.prototype);
+    class_three.prototype.fun_three = function(){
+        return "Hello_3";
+    }
+    let obj_1 = new class_one();
+    console.log(obj_1.fun_one());
+    let obj_2 = new class_two();
+    console.log(obj_2.fun_two(),obj_2.fun_one());
+    let obj_3 = new class_three();
+    console.log(obj_3.fun_one(),obj_3.fun_two(),obj_3.fun_three());
+ -->
+
+ <script>
+    function class_one(){
+
+    };
+    class_one.prototype.fun = function class_one(){
+        return "Data from oracle db soon";
+    }
+    function class_two(){
+
+    }
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.fun = function(){
+        return "Data from monogodb soon...!";
+    }
+    let obj = new class_two();
+    console.log(obj.fun());
+ </script>
+ </script>
+</head>
+<body>
+    
+</body>
+</html>
