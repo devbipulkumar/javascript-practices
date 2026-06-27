@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function *fun_one(){
+            yield "stmt-1";
+            yield "stmt-2";
+            yield "stmt-3";
+            yield "stmt-4";   
+        }
+        let cursor = fun_one();
+        console.log(cursor.next());
+        console.log(cursor.next());
+        console.log(cursor.next());
+        console.log(cursor.next());
+        console.log(cursor.next());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -131,14 +131,13 @@
     };
     class_one.prototype.fun = function class_one(){
         return "Data from oracle db soon";
-    }
+    };
     function class_two(){
-
-    }
+    };
     class_two.prototype = Object.create(class_one.prototype);
     class_two.prototype.fun = function(){
         return "Data from monogodb soon...!";
-    }
+    };
     let obj = new class_two();
     console.log(obj.fun());
  </script>
