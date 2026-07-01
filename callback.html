@@ -174,8 +174,10 @@
    let div = (num,callback2)=>{
      return callback2(num/2+3,false);
    }
-   calc(5,(addRes,error)=>{
-       if(!error){
+   let xxx=(addRes,error)=>
+   {
+       if(!error)
+       {
         sub(addRes,(subRes,error)=>{
           if(!error){
             mul(subRes,(mulRes,error)=>{
@@ -191,10 +193,19 @@
           }
         })
        }
-   })
+   }
+   
+   calc(5,xxx)
  </script>
 </head>
 <body>
     
 </body>
 </html>
+
+Advance javaSCRIPT
+functining chaining
+
+callback hell
+
+async await
