@@ -49,7 +49,9 @@ arr.splice(0,1,10,20,30);
 console.log(arr);        //[10, 20, 30, 50,60, 40, 70, 80]
 
 arr.splice(8,0,100);
-console.log(arr);        //
+console.log(arr);        //[10, 20, 30, 50,60, 40, 70, 80,100]
+
+
 
 
 
