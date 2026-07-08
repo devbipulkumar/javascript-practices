@@ -335,13 +335,94 @@ let obj = {
         document.write(`</table>`);
 </script>
 -->
+<!--
 <script>
     let obj = {"key1":"Hello_1"};
-    console.log(typeof obj);
+    console.log(typeof obj);      //object
 
     let str = JSON.stringify(obj);
-    console.log(typeof str);
+    console.log(typeof str);      //string
 </script>
+-->
+<!--
+<script>
+     let obj = {
+        "key1":"Hello_1",
+        "key2":"Hello_2",
+        "key3":"Hello_3"
+     };
+     console.log(obj.hasOwnProperty("key1"));
+     console.log(obj.hasOwnProperty("key2"));
+     console.log(obj.hasOwnProperty("key3"));
+     console.log(obj.hasOwnProperty("key4"));
+
+</script>
+-->
+<!--
+ <script>
+    let obj = {
+        
+    };
+    Object.keys(obj).length == 0? console.log("Empty"): console.log("not empty");
+    Object.values(obj).length == 0? console.log("Empty"): console.log("not empty");
+ </script>
+-->
+
+<!--
+ // converting object to array
+ <script>
+     let obj = {
+        "a":"b",
+        "c":"d",
+        "e":"f"
+     };
+     let arr = Object.entries(obj);
+     console.log(arr);
+ </script>
+-->
+
+<!--
+ //concatenate of more then two object
+ <script>
+    let obj1 = {"key1":"Hello_1"}
+    let obj2 = {"key2":"Hello_2"}
+    let obj3 = {"key3":"Hello_3"}
+    console.log(Object.assign(obj1,obj2,obj3));
+ </script
+ 
+ -->
+ <!--
+ <script>
+    let arr = [100,200,300,400,500];
+    console.log(arr.filter((element,index)=>{
+         return element>= 300;
+    }));
+ </script>
+-->
+
+<!--
+ <script>
+    let arr = [100,200,300,400,500];
+    console.log(arr.filter((element)=>{
+        return element<=300;
+    }).map((element)=>{
+        return {"key1":element};
+    }))
+ </script>
+-->
+  
+ <script>
+    let arr =[
+        {"price":100},
+        {"price":200},
+        {"price":300},
+        {"price":400},
+        {"price":500}
+    ];
+    console.log(arr.filter((element)=>{
+        return element.price >= 300;
+    }))
+ </script>
 </head>
 <body>
     
